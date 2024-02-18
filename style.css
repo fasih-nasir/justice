@@ -5,6 +5,13 @@
     --grey: #FFFFFF91;
     --color:#1A1A1A;
 }
+@media (max-width:600px) {
+    #row-7,#col-9{
+        /* border: 2px solid red; */
+        margin: 10px;
+        /* background-color: red; */
+    }
+}
 body{
     overflow-x: hidden;
 }
