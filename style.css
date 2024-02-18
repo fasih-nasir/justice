@@ -105,9 +105,10 @@ body {
 }
 
 #home {
+    padding: 100px 0px;
     background-image: url(img/can\ \(1\).png);
    /* max-height: 150vh; */
-   height: 700px;
+   /* height: 700px; */
    /* border: 2px solid red; */
     background-size: cover;
 object-fit: cover;
@@ -121,9 +122,10 @@ justify-content: center;
 
 @media (max-width:992px) {
     #home{
+        /* padding: 150px 0px; */
         display: flex;
         flex-direction: row;
-        height: 160vh;
+        /* height: 160vh; */
 
         align-items: center;
     }
@@ -195,7 +197,11 @@ li>#dropdown-menu {
     font-weight: 500;
     background-color: var(--greencolor);
 }
-
+@media (max-width:992px) {
+    #cont-1{
+        margin-top: 250px;
+    }
+}
 #row-1{
     /* height: 100%; */
     display: flex;
@@ -373,7 +379,7 @@ font-weight: 500;
     /* border-top: 1px solid rgba(0, 0, 0, 0.083); */
     /* box-shadow: 0.1px 5px 10px rgba(0, 0, 0, 0.284) inset; */
     background-color: #141414;
-    height: 100%;
+    /* height: 100%; */
     display: flex;
     /* flex-basis: 100vh; */
     flex-direction: row;
@@ -393,7 +399,7 @@ font-weight: 500;
 }
 @media (max-width:778px) {
     #about{
-       height: 100%;
+       /* height: 100%; */
         /* border: 2px solid red; */
         /* height: 180vh; */
         /* padding: 40px 0px; */
