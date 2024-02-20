@@ -5,7 +5,11 @@
     --grey: #FFFFFF91;
     --color:#1A1A1A;
 }
-body{
+*{
+    /* background-color: #BAEE30; */
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
     overflow-x: hidden;
 }
 
@@ -251,8 +255,13 @@ justify-content: space-around;
     /* width: 230px; */
     height: 360px;
 }
+.headin-1{
+    /* font-size: 12px; */
+}
 .box{
-height: 85px;
+    box-sizing: border-box;
+overflow: hidden;
+    height: 85px;
 background-color: black;
 text-align: center;
 color: white;
@@ -283,19 +292,33 @@ padding:10px 20px;
        }
 }
 #btncan{
-padding: 0px 55px;
+padding: 15px 55px;
     position: absolute;
     top: 0px;
     visibility: hidden;
     /* display: none; */
     display: flex;
     flex-direction: row;
+    /* align-items: center; */
     justify-content: space-between;
     /* width: 100%; */
      /* border: 2px solid red; */
     z-index: 12;
     /* right: 10px; */
 }
+.fa-bars{
+    position: absolute;
+    top: 25px ;
+    /* padding: 20px 0px; */
+}
+@media (max-width:400px) {
+    .fa-bars{
+        top: 30px;
+        padding: 20px 0px;
+    }
+  
+    }
+
 #logo-cn{
     height: 40px;
     /* position: absolute; */
@@ -326,8 +349,15 @@ padding: 0px 55px;
     font-size: 28px;
     font-family: var(--font);
 }
+@media (max-width:360px) {
+    #btncan{
+        padding:40px 10px ;
+    }
+}
 @media (max-width:992px) {
     #btncan{
+        /* padding: 10px 0px; */
+        height: 100%;
         visibility: visible;
     }
     #col-1{
@@ -359,11 +389,17 @@ padding: 0px 55px;
     font-weight: 900;
     color: #BAEE30;
 }
-#col-2>h1{
+
+@media (max-width: 400px) {
+    .headin-1{
+        font-size: 30px;
+    }
+}
+.headin-1{
     font-family: var(--font);
-    font-size: 54px;
+    /* font-size: 54px; */
 letter-spacing: -1px;
-    color: white;
+    color: rgb(255, 255, 255);
     word-spacing: 3px;
      padding-bottom: 20px;
 }
@@ -728,11 +764,12 @@ padding: 0px;
     text-decoration: none;
     font-family: var(--font);
     /* font-weight: 700; */
-    font-size: 24px;
+    /* font-size: 14px; */
 }
+
     .offcanvas-body >ul>li{
         text-align: left;
-        padding: 20px 0px;
+        padding: 10px 0px;
     }
 .offcanvas-body >ul{
     display: flex;
@@ -749,6 +786,9 @@ list-style: none;
 
 }
 @media (max-width:992px) {
+    .offcanvas-body{
+        height: 100vh;
+    }
     #col-12{
         /* border: 2px solid red; */
         width: 1200px;
