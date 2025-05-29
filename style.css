@@ -84,7 +84,7 @@
 
     .navbar-nav>li>.nav-link {
         color: black !important;
-        font-size: 12px;
+     
         z-index: 4;
         right: 40px;
         display: none;
